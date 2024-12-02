@@ -1,5 +1,5 @@
-import aoc.day1.countDistance
-import aoc.day1.countDistanceMultiplied
+import aoc.day1.firstPart
+import aoc.day1.secondPart
 import java.io.File
 import kotlin.test.Test
 
@@ -12,7 +12,7 @@ class Day1 {
     fun firstPart() {
         val (leftList, rightList) = readInput()
 
-        val distance = countDistance(leftList, rightList)
+        val distance = firstPart(leftList, rightList)
         println(distance)
     }
 
@@ -20,7 +20,7 @@ class Day1 {
     fun secondPart() {
         val (leftList, rightList) = readInput()
 
-        val distance = countDistanceMultiplied(leftList, rightList)
+        val distance = secondPart(leftList, rightList)
         println(distance)
     }
 }
